@@ -8,3 +8,5 @@ botao.addEventListener('click', ()=>{
     botao.classList.toggle('dark')
     casas.forEach(casa => casa.classList.toggle('dark'))
 })
+
+let jogador1 = document.getElementById('')
