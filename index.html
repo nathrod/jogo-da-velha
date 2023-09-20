@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da Velha</title>
+    <link rel="stylesheet" href="style.css"> 
+    
+</head>
+<body>
+    
+    <h1>JOGO<br> DA<br> VELHA</h1>
+    <button class="botao-jogar" >JOGAR</button>
+    
+    <div class="jogadores">
+        <div>
+            <div class="symbol">X</div>
+            <input type="text" placeholder="JOGADOR 1" class="playername">
+        </div>
+        <div>
+            <div class="symbol">O</div>
+            <input type="text" placeholder="JOGADOR 2" class="playername">
+        </div>
+    </div>
+    
+    <div class="container">
+         <!--<a href="#" class="btn">LIGHT</a>-->
+        <button class="btn" id="btnLight"></button>
+
+        <!--DIVIDIDA EM 3 LINHAS E 3 COLUNAS-->
+        <div id="jogo">
+             <!--ID PARA IDENTIFICAR SE A CASA POSSUI X OU O-->
+            <div class="linha">
+                <div class="casa" id="esp"></div>
+                <div class="casa" id="esp"></div>
+                <div class="casa" id="esp"></div>
+            </div>
+        
+            <div class="linha"> 
+                <div class="casa" id="esp"></div>
+                <div class="casa" id="esp"></div>
+                <div class="casa" id="esp"></div>
+            </div>
+        
+            <div class="linha">
+                <div class="casa" id="esp"></div>
+                <div class="casa" id="esp"></div>
+                <div class="casa" id="esp"></div>
+            </div>
+        </div>
+    </div>
+    
+    
+    <footer>
+        <p><em>Nathalia Rodrigues © 2023 </em></p>   
+    </footer>
+    <script src="main.js"></script>
+</body>
+</html>
