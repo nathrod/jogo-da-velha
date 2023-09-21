@@ -3,4 +3,5 @@ Jogo da Velha desenvolvido como parte da disciplina SI-401 (Programação para a
 
 <h1 align="center">
   <img alt="tela-inicial" src="assets/tela-inicial.png" />
+  <img alt="tela-inicial-alert" src="assets/tela-inicial-alert.png">
 </h1>
