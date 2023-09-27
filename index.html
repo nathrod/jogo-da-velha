@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jogo da Velha</title>
     <link rel="stylesheet" href="style.css"> 
-    <link rel="shortcut icon" type="image" href="favicon.ico"/>
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
 </head>
 <body>
 
@@ -25,34 +25,43 @@
             <input type="text" placeholder="JOGADOR 2" id="s-name">
         </div>
     </div>
+
     
     <div class="container">
-         <!--<a href="#" class="btn">LIGHT</a>-->
+            
         <button class="btn" id="btnLight"></button>
-
-        <!--DIVIDIDA EM 3 LINHAS E 3 COLUNAS-->
+        <p id="jogador-atual" class="player"></p>
+    
         <div id="jogo">
-             <!--ID PARA IDENTIFICAR SE A CASA POSSUI X OU O-->
             <div class="linha">
-                <div class="casa" id="esp"></div>
-                <div class="casa" id="esp"></div>
-                <div class="casa" id="esp"></div>
+                <div class="casa" id="esp1" onclick="preencher(1)"></div>
+                <div class="casa" id="esp2" onclick="preencher(2)"></div>
+                <div class="casa" id="esp3" onclick="preencher(3)"></div>
             </div>
-        
+            
             <div class="linha"> 
-                <div class="casa" id="esp"></div>
-                <div class="casa" id="esp"></div>
-                <div class="casa" id="esp"></div>
+                <div class="casa" id="esp4" onclick="preencher(4)"></div>
+                <div class="casa" id="esp5" onclick="preencher(5)"></div>
+                <div class="casa" id="esp6" onclick="preencher(6)"></div>
             </div>
-        
+            
             <div class="linha">
-                <div class="casa" id="esp"></div>
-                <div class="casa" id="esp"></div>
-                <div class="casa" id="esp"></div>
+                <div class="casa" id="esp7" onclick="preencher(7)"></div>
+                <div class="casa" id="esp8" onclick="preencher(8)"></div>
+                <div class="casa" id="esp9" onclick="preencher(9)"></div>
             </div>
         </div>
     </div>
     
+    <div class="janela">
+        <div class="modal">
+            <p id="msg-final"></p>
+            <div class="btn-fim">
+                <button id="reiniciar" onclick="reiniciar()">Reiniciar</button>
+                <button id="novosJogadores" onclick="newplayers()">Novos Jogadores</button>
+            </div>
+        </div>
+    </div>
     
     <footer>
         <p><em>Nathalia Rodrigues © 2023 </em></p>   
